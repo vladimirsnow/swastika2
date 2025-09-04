@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    height: 100%;
+    background: #ff0000;
+}
+
+.contanier {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.krug {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+.main {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: spin 5s linear infinite;
+}
+
+.block1 {
+    display: flex;
+    width: 25px;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    z-index: 10;
+}
+
+.block2 {
+    display: flex;
+    height: 25px;
+    width: 100%;
+    background: #000;
+    position: absolute;
+}
+
+.block3 {
+    display: flex;
+    width: 25px;
+    height: 50%;
+    background: #000;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    bottom: 0;
+}
+
+.block4 {
+    display: flex;
+    height: 25px;
+    width: 50%;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.block5 {
+    display: flex;
+    width: 25px;
+    height: 50%;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.block6 {
+    display: flex;
+    height: 25px;
+    width: 50%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
